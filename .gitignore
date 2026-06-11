@@ -1,0 +1,11 @@
+#Compilation foldes
+bin/
+obj/
+
+#Exclude sensitive setting files
+appsettings.Development.json
+
+#Excludes temporary IDE files
+.gitignore.swp
+*.log
+.DS_Store

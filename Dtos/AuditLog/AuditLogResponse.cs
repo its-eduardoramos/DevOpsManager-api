@@ -1,0 +1,11 @@
+namespace api.Dtos
+{
+  public class AuditLogResponse
+  {
+    public int Id { get; set; }
+    public string Action { get; set; } = string.Empty;
+    public string ResourceName { get; set; } = string.Empty;
+    public DateTime Timestamp { get; set; }
+    public string UserEmail { get; set; } = string.Empty;
+  }
+}
