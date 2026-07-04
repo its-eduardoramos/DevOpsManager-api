@@ -11,9 +11,21 @@ namespace api.Mappers
       {
         UserName = appUser.UserName,
         Email = appUser.Email,
-        Token = token,
+        Token = token
       };
     }
+
+    public static UserListResponse ToListResponse(this AppUser appUser, string roles)
+    {
+      return new UserListResponse
+      {
+        Id = appUser.Id,
+        UserName = appUser.UserName,
+        Email = appUser.Email,
+        Roles = roles,
+      };
+    }
+
     public static AppUser ToEntity(this CreateAccountRequest accountDto)
     {
       return new AppUser
